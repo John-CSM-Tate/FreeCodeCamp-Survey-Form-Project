@@ -8,6 +8,118 @@
     <title>FreeCodeCamp Survey Form Challenge</title>
 </head>
 <body>
-    
+    <main>
+        <header>
+            <!-- You should have an h1 element with an id of title,
+                 Your #title should not be empty.-->
+            <h1 id="title" class="text-center">Survey on Surveys</h1>
+            <!-- You should have a p element with an id of description.
+                Your #description should not be empty. -->
+            <p id="description" class="text-center">A Survey about doing surveys</p>
+        </header>
+        <!-- You should have a form element with an id of survey-form. -->
+        <form id="survey-form">
+            <div class="form-group"> <!-- Name Group -->
+                <!-- Your label element:
+                    with an id of name-label, 
+                    contain text that describes the input,
+                    & descendant of #survey-form -->
+                <label id="name-label" for="name">Name<span class="required">*</span></label> 
+                <!-- You should have an input element:
+                    with an id of name,
+                    a type of text, 
+                    require input,
+                    should have a placeholder attribute,
+                    & descendant of #survey-form -->
+                <input id="name" type="text" palceholder="Enter your name" required/>
+            </div>
+            <div class="form-group"> <!-- E-mail Group -->
+                <!-- Your label element:
+                    with an id of email-label, 
+                    contain text that describes the input,
+                    & descendant of #survey-form -->
+                <label id="email-label" for="email">E-mail<span class="required">*</span></label>
+                <!-- You should have an input element:
+                    with an id of email:
+                    a type of email, 
+                    require input,
+                    should have a placeholder attribute,
+                    & descendant of #survey-form -->
+                <input id="email" type="email" placeholder="Enter your E-mail" required/>
+            </div>
+            <div class="form-group"> <!-- Age Group -->
+                <!-- You label element:
+                    with an id of number-label, 
+                    contain text that describes the input, 
+                    & descendant of #survey-form -->
+                <label id="number-label" for="number">Age:</label> 
+                <!-- You should have an input element:
+                    with an id of number:
+                    a type of number, 
+                    min attribute with a numeric value,
+                    max attribute with a numeric value,
+                    should have a placeholder attribute,
+                    & descendant of #survey-form -->
+                <input id="number" type="number" min="13" max="137" placeholder="Age"/>
+            </div>
+            <div class="form-group"> <!-- Dropdown Group -->
+                <label id="rating-label" for="dropdown">How do you rate this survey?</label>
+            <!-- You should have a select field:
+                 with an id of dropdown, 
+                 at least two selectable (not disabled) option elements,
+                 & descendant of #survey-form -->
+                <select id="dropdown" name="rating" required>
+                    <option disabled selected>Select a rating</option>
+                    <option value="5">(5)Great</option>
+                    <option value="4">(4)Good</option>
+                    <option value="3">(3)Ok</option>
+                    <option value="2">(2)Bad</option>
+                    <option value="1">(1)Awful</option>
+                </select>
+            </div>
+            <div class="form-group"> <!-- Radio Button Group -->
+            <!-- You should have at least two input elements:
+                with a type of radio (radio buttons),
+                should have a value attribute and value,
+                should have a name attribute and value,
+                Every radio button group should have at least 2 radio buttons,
+                & descendant of #survey-form -->
+                
+                <fieldset>
+                    <Legend>How do you feel about surveys?</Legend>
+                    <label for="r-love"><input type="radio" id="radio-love" value="love" name="love-hate">Love</label>
+                    <label for="r-hate"><input type="radio" id="radio-hate" value="hate" name="love-hate">Hate</label>
+                </fieldset>
+            </div>
+            <div class="form-group"> <!-- Checkbox Group -->
+                <!-- You should have at least two input elements:
+                with a type of checkbox (checkboxes) 
+                should have a value attribute and value.
+                & descendants of #survey-form.
+            -->
+                <fieldset>
+                    <legend>Where do you like to do surveys?</legend>
+                    <label for="ch-website"><input type="checkbox" id="ch-website" value="ch-website">Website</label>
+                    <label for="ch-email"><input type="checkbox" id="ch-email" value="ch-email">E-mail</label>
+                    <label for="ch-phone"><input type="checkbox" id="ch-phone" value="ch-phone">On the Phone</label>
+                    <label for="ch-person"><input type="checkbox" id="ch-person" value="ch-person">In Person</label>
+                </fieldset>
+            </div>
+            <div class="form-group"> <!-- Textarea Group -->
+                <!-- You should have at least one textarea element that is a 
+                    descendant of #survey-form. -->
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div class="form-group"> <!-- Submit Group -->
+                <!-- You should have an input or button element:
+                with an id of submit,
+                have a type of submit,
+                & descendant of #survey-form. -->
+                <button class="submit-button" type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+
+    </main>
 </body>
 </html>
