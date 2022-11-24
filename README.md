@@ -13,8 +13,8 @@ Creating a survey form for the [FreeCodeCamp](https://www.freecodecamp.org/) Res
 
 ## Links
 
-Live Site URL: [Live Github Page](https://john-csm-tate.github.io/FreeCodeCamp-Survey-Form-Project/)
+Live Site URL: [Live Github Page](https://john-csm-tate.github.io/freecodecamp-survey-form-project/)
 
-## Authors
+## Author Links
 
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/john-csm-tate/)
